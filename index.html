@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/c359df3fee.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,6 +51,7 @@
         margin-left: 3.6%;
         display: block;
         font-size: 200%;
+        box-shadow: 0 0 5px rgb(0, 0, 0);
       }
 
       .accordion-item {
@@ -63,6 +68,10 @@
       .card {
         transition: all 500ms ease;
         transition-property: background-color, transform;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        background-color: #2b3544e8;
+        color: white;
+        text-shadow: 0 0 8px black;
       }
       .card:hover {
         cursor: pointer;
@@ -84,14 +93,12 @@
       }
       .container {
         background-color: #2b3544;
-        box-shadow: 0 0 0px rgb(0, 0, 0);
+        box-shadow: 0 0 5px rgb(0, 0, 0);
       }
       .Genre {
         background-color: rgb(62, 107, 156);
       }
-      .card {
-        box-shadow: 0 0 20px rgb(0, 0, 0);
-      }
+
       .btn-outline-secondary {
         background-color: #2b3544;
         color: white;
@@ -101,18 +108,6 @@
       }
       .carousel {
         box-shadow: 0 0 10px black;
-        background-color: rgb(62, 107, 156);
-        transition: background-color 800ms;
-      }
-      .carousel:hover {
-        transition: background-color 800ms;
-        background-color: #3a4e6d;
-      }
-
-      .card {
-        background-color: #2b3544e8;
-        color: white;
-        text-shadow: 0 0 15px black;
       }
     </style>
 
@@ -125,6 +120,7 @@
       style="background-color: #0042a5"
     >
       <div class="container-fluid">
+        <i class="fa-solid fa-book-open text-white fs-5"></i>
         <a
           class="navbar-brand btn btn-outline-dark pe-3 fs-4"
           style="border: none"
@@ -188,11 +184,11 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#later">Science-Fiction</a>
+                  <a class="dropdown-item" href="#scifi">Science-Fiction</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Horror</a></li>
+                <li><a class="dropdown-item" href="#horr">Horror</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Mystery</a>
+                  <a class="dropdown-item" href="#myst">Mystery</a>
                 </li>
               </ul>
             </li>
@@ -209,7 +205,7 @@
     <div style="padding: 3%">
       <div
         id="carouselExampleCaptions"
-        class="carousel slide carousel-fade w-75 mx-auto p-5 mt-5 rounded-1"
+        class="carousel slide carousel-fade w-75 mx-auto mt-5 rounded-1"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -235,7 +231,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
+          <div class="carousel-item active" data-bs-interval="3000">
             <!-- DUNE /////////////////////////////////// -->
             <img
               draggable="false"
@@ -255,7 +251,7 @@
               </p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="carousel-item" data-bs-interval="3000">
             <!-- METRO /////////////////////////////////////-->
             <img
               draggable="false"
@@ -275,7 +271,7 @@
               </p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="carousel-item" data-bs-interval="4000">
             <!-- READY PLAYER ONE /////////////////////////////// -->
             <img
               draggable="false"
@@ -1065,7 +1061,7 @@
     <!-- modal authors end///////////////////////////////////////////////////////////////// -->
 
     <!-- GENRE ACCORDIAN//////////////////////////////////////////////////////////////////////////////////////// -->
-    <div class="container-fluid w-100 p-5 Genre">
+    <div class="container-fluid w-100 p-5 Genre" id="scifi">
       <h1 class="text-center p-5 text-black">GENRE</h1>
       <!-- container1 -->
       <kbd class="mb-3 w-25 text-center">Science-Fiction</kbd>
@@ -1225,6 +1221,8 @@
           </div>
         </div>
       </div>
+      <section id="horr"></section>
+
       <!-- container1 end -->
 
       <!-- container2 -->
@@ -1324,6 +1322,7 @@
             >
               <div class="accordion-body bg-light rounded-bottom">
                 <br />
+
                 One of the feature stories of the Cthulhu Mythos, H.P.
                 Lovecraft's 'the Call of Cthulhu' is a harrowing tale of the
                 weakness of the human mind when confronted by powers and
@@ -1509,6 +1508,7 @@
           </div>
         </div>
       </div>
+      <section id="myst"></section>
       <!-- container3 end -->
     </div>
     <!-- GENRE ACCORDIAN END/////////////////////////////////////////////////////////////// -->
