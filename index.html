@@ -27,10 +27,14 @@
     ></script>
     <!-- Custom  CSS-->
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap");
       a {
         text-decoration: none;
         padding-left: 30%;
         font-size: 22px;
+      }
+      h1 {
+        font-family: "Fira Sans", sans-serif;
       }
       h1:hover {
         cursor: default;
@@ -39,6 +43,12 @@
         width: 100%;
         height: 100%;
       }
+      kbd {
+        margin-left: 3.6%;
+        display: block;
+        font-size: 200%;
+      }
+
       .accordion-item {
         background-color: #2b3544;
         border: none;
@@ -74,7 +84,7 @@
       }
       .container {
         background-color: #2b3544;
-        box-shadow: 0 0 18px rgb(0, 0, 0);
+        box-shadow: 0 0 0px rgb(0, 0, 0);
       }
       .Genre {
         background-color: rgb(62, 107, 156);
@@ -199,7 +209,7 @@
     <div style="padding: 3%">
       <div
         id="carouselExampleCaptions"
-        class="carousel slide carousel-fade w-75 mx-auto p-5 mt-5 rounded-4"
+        class="carousel slide carousel-fade w-75 mx-auto p-5 mt-5 rounded-1"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -230,11 +240,13 @@
             <img
               draggable="false"
               src="./images/duneC.jpg"
-              class="d-block w-100 rounded-4"
+              class="d-block w-100 rounded-1"
               alt="error"
             />
             <div class="carousel-caption d-none d-md-block">
-              <kbd class="fs-2 bg-dark bg-opacity-50 rounded-2 p-2">DUNE</kbd>
+              <kbd class="fs-2 bg-dark bg-opacity-50 rounded-1 w-25 mx-auto p-1"
+                >DUNE</kbd
+              >
               <p class="bg-dark bg-opacity-50 rounded-3 p-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis repellendus perferendis cumque expedita aspernatur
@@ -248,11 +260,11 @@
             <img
               draggable="false"
               src="./images/metroC.jpg"
-              class="d-block w-100 rounded-4"
+              class="d-block w-100 rounded-1"
               alt="error"
             />
             <div class="carousel-caption d-none d-md-block">
-              <kbd class="fs-2 bg-dark bg-opacity-50 rounded-2 p-2"
+              <kbd class="fs-2 bg-dark bg-opacity-50 w-50 mx-auto rounded-2 p-1"
                 >METRO 2033</kbd
               >
               <p class="bg-dark bg-opacity-50 rounded-3 p-1">
@@ -268,11 +280,11 @@
             <img
               draggable="false"
               src="./images/readyplayerC.jpg"
-              class="d-block w-100 rounded-4"
+              class="d-block w-100 rounded-1"
               alt="error"
             />
             <div class="carousel-caption d-none d-md-block">
-              <kbd class="fs-2 bg-dark bg-opacity-50 rounded-2 p-2"
+              <kbd class="fs-2 bg-dark bg-opacity-50 mx-auto rounded-2 w-50 p-1"
                 >READY PLAYER ONE</kbd
               >
               <p class="bg-dark bg-opacity-50 rounded-3 p-1">
@@ -338,7 +350,7 @@
                       draggable="false"
                       width="96%"
                       src="./images/angels.jpg"
-                      class="img-fluid rounded-2 h-100"
+                      class="img-fluid rounded-1 h-100"
                       alt="error"
                     />
                   </div>
@@ -369,7 +381,7 @@
                     <img
                       draggable="false"
                       src="./images/harry.jpg"
-                      class="img-fluid rounded-2 h-100"
+                      class="img-fluid rounded-1 h-100"
                       alt="error"
                     />
                   </div>
@@ -401,7 +413,7 @@
                       draggable="false"
                       src="./images/alchemist.jpg"
                       width="97%"
-                      class="img-fluid rounded-2 h-100"
+                      class="img-fluid rounded-1 h-100"
                       alt="error"
                     />
                   </div>
@@ -437,7 +449,7 @@
                     <img
                       draggable="false"
                       src="./images/maze.jpg"
-                      class="img-fluid rounded-2"
+                      class="img-fluid rounded-1"
                       width="97%"
                       alt="error"
                     />
@@ -469,7 +481,7 @@
                     <img
                       draggable="false"
                       src="./images/metro.jpg"
-                      class="img-fluid rounded-2"
+                      class="img-fluid rounded-1"
                       width="98%"
                       alt="error"
                     />
@@ -501,7 +513,7 @@
                     <img
                       draggable="false"
                       src="./images/witcher.jpg"
-                      class="img-fluid rounded-2 h-100"
+                      class="img-fluid rounded-1 h-100"
                       alt="error"
                     />
                   </div>
@@ -537,7 +549,7 @@
       <!-- AUTHOR CARDS section  -->
 
       <div
-        class="container mt-5 mb-5 d-flex flex-wrap pt-5 pb-5 rounded-4"
+        class="container mt-5 mb-5 d-flex flex-wrap pt-5 pb-5 rounded-1"
         style="background-color: rgb(62, 107, 156)"
       >
         <br />
@@ -546,7 +558,7 @@
         <!-- Author Card 1 //////////////////////////////////////////-->
         <!--  -->
         <div
-          class="card mx-auto w-25 img-fluid rounded-4"
+          class="card mx-auto w-25 img-fluid rounded-1"
           data-bs-toggle="modal"
           data-bs-target="#author1"
           style="width: 20rem"
@@ -554,7 +566,7 @@
           <img
             draggable="false"
             src="./images/paulo.webp"
-            class="card-img-top rounded-4"
+            class="card-img-top rounded-1"
             alt="error"
           />
           <div class="card-body">
@@ -571,7 +583,7 @@
         <!-- Author Card 2 //////////////////////////////////////////-->
         <!--  -->
         <div
-          class="card mx-auto w-25 img-fluid rounded-4"
+          class="card mx-auto w-25 img-fluid rounded-1"
           data-bs-toggle="modal"
           data-bs-target="#author2"
           style="width: 20rem"
@@ -579,7 +591,7 @@
           <img
             draggable="false"
             src="./images/rowling.webp"
-            class="card-img-top rounded-4"
+            class="card-img-top rounded-1"
             alt="error"
           />
           <div class="card-body">
@@ -596,7 +608,7 @@
         <!-- Author Card 3 //////////////////////////////////////////-->
         <!--  -->
         <div
-          class="card mx-auto w-25 rounded-4"
+          class="card mx-auto w-25 rounded-1"
           data-bs-toggle="modal"
           data-bs-target="#author3"
           style="width: 20rem"
@@ -604,7 +616,7 @@
           <img
             draggable="false"
             src="./images/king.webp"
-            class="card-img-top rounded-4"
+            class="card-img-top rounded-1"
             alt="error"
           />
           <div class="card-body">
@@ -1056,8 +1068,8 @@
     <div class="container-fluid w-100 p-5 Genre">
       <h1 class="text-center p-5 text-black">GENRE</h1>
       <!-- container1 -->
-      <h3 class="m-5">Science-Fiction</h3>
-      <div class="container mx-auto rounded-4">
+      <kbd class="mb-3 w-25 text-center">Science-Fiction</kbd>
+      <div class="container mx-auto rounded-1">
         <div class="accordion accordion-flush p-5" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -1216,8 +1228,8 @@
       <!-- container1 end -->
 
       <!-- container2 -->
-      <h3 class="m-5">Horror</h3>
-      <div class="container mx-auto rounded-4 mt-5">
+      <kbd class="mt-5 w-25 text-center">Horror</kbd>
+      <div class="container mx-auto rounded-1 mt-3">
         <div class="accordion accordion-flush p-5" id="accordionFlushExample2">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne2">
@@ -1328,8 +1340,8 @@
       <!-- container2 end -->
 
       <!-- container3 -->
-      <h3 class="m-5">Mystery</h3>
-      <div class="container mx-auto rounded-4 mt-5">
+      <kbd class="mt-5 w-25 text-center">Mystery</kbd>
+      <div class="container mx-auto rounded-1 mt-3">
         <div class="accordion accordion-flush p-5" id="accordionFlushExample3">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne3">
