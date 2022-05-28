@@ -43,6 +43,12 @@
         background-color: #2b3544;
         border: none;
       }
+      .accordion-button {
+        background-color: rgb(55, 132, 215);
+      }
+      .accordion-button:hover {
+        background-color: #0042a5;
+      }
       .card {
         transition: all 500ms ease;
         transition-property: background-color, transform;
@@ -193,7 +199,7 @@
       <div
         id="carouselExampleCaptions"
         class="carousel slide carousel-fade w-75 mx-auto p-5 mt-5 rounded-4"
-        data-bs-ride="false"
+        data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
           <button
@@ -218,7 +224,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="5000">
             <!-- DUNE /////////////////////////////////// -->
             <img
               draggable="false"
@@ -236,7 +242,7 @@
               </p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <!-- METRO /////////////////////////////////////-->
             <img
               draggable="false"
@@ -256,7 +262,7 @@
               </p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <!-- READY PLAYER ONE /////////////////////////////// -->
             <img
               draggable="false"
@@ -1055,14 +1061,14 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button
-                class="accordion-button collapsed bg-info mx-auto rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                Science-Fiction
+                Ender's Game
               </button>
             </h2>
             <div
@@ -1071,7 +1077,10 @@
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body bg-light" id="later">
+              <div
+                class="accordion-body bg-secondary rounded-bottom"
+                id="later"
+              >
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 first item's accordion body.
@@ -1082,14 +1091,14 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button
-                class="accordion-button collapsed mx-auto bg-info rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Horror
+                The Hitchhiker's Guide to the Galaxy
               </button>
             </h2>
             <div
@@ -1098,7 +1107,7 @@
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body bg-light">
+              <div class="accordion-body bg-secondary rounded-bottom">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 second item's accordion body. Let's imagine this being filled
@@ -1110,14 +1119,14 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
               <button
-                class="accordion-button collapsed mx-auto bg-info rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseThree"
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                Mystery
+                The Hunger Games
               </button>
             </h2>
             <div
@@ -1126,7 +1135,7 @@
               aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body bg-light">
+              <div class="accordion-body bg-secondary rounded-bottom">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 third item's accordion body. Nothing more exciting happening
@@ -1143,27 +1152,27 @@
       <!-- container2 -->
       <h3 class="m-5">Horror</h3>
       <div class="container mx-auto rounded-4 mt-5">
-        <div class="accordion accordion-flush p-5" id="accordionFlushExample">
+        <div class="accordion accordion-flush p-5" id="accordionFlushExample2">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
+            <h2 class="accordion-header" id="flush-headingOne2">
               <button
-                class="accordion-button collapsed bg-info mx-auto rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
+                data-bs-target="#flush-collapseOne2"
                 aria-expanded="false"
-                aria-controls="flush-collapseOne"
+                aria-controls="flush-collapseOne2"
               >
-                Science-Fiction
+                The Shining
               </button>
             </h2>
             <div
-              id="flush-collapseOne"
+              id="flush-collapseOne2"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample"
+              aria-labelledby="flush-headingOne2"
+              data-bs-parent="#accordionFlushExample2"
             >
-              <div class="accordion-body bg-light" id="later">
+              <div class="accordion-body bg-light rounded-bottom" id="later2">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 first item's accordion body.
@@ -1172,25 +1181,25 @@
           </div>
           <br />
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
+            <h2 class="accordion-header" id="flush-headingTwo2">
               <button
-                class="accordion-button collapsed mx-auto bg-info rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
+                data-bs-target="#flush-collapseTwo2"
                 aria-expanded="false"
-                aria-controls="flush-collapseTwo"
+                aria-controls="flush-collapseTwo2"
               >
-                Horror
+                'Salem's Lot
               </button>
             </h2>
             <div
-              id="flush-collapseTwo"
+              id="flush-collapseTwo2"
               class="accordion-collapse collapse"
               aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample"
+              data-bs-parent="#accordionFlushExample2"
             >
-              <div class="accordion-body bg-light">
+              <div class="accordion-body bg-light rounded-bottom">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 second item's accordion body. Let's imagine this being filled
@@ -1200,25 +1209,25 @@
           </div>
           <br />
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
+            <h2 class="accordion-header" id="flush-headingThree2">
               <button
-                class="accordion-button collapsed mx-auto bg-info rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
+                data-bs-target="#flush-collapseThree2"
                 aria-expanded="false"
-                aria-controls="flush-collapseThree"
+                aria-controls="flush-collapseThree2"
               >
-                Mystery
+                The Call of Cthulhu
               </button>
             </h2>
             <div
-              id="flush-collapseThree"
+              id="flush-collapseThree2"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample"
+              aria-labelledby="flush-headingThree2"
+              data-bs-parent="#accordionFlushExample2"
             >
-              <div class="accordion-body bg-light">
+              <div class="accordion-body bg-light rounded-bottom">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 third item's accordion body. Nothing more exciting happening
@@ -1235,27 +1244,27 @@
       <!-- container3 -->
       <h3 class="m-5">Mystery</h3>
       <div class="container mx-auto rounded-4 mt-5">
-        <div class="accordion accordion-flush p-5" id="accordionFlushExample">
+        <div class="accordion accordion-flush p-5" id="accordionFlushExample3">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
+            <h2 class="accordion-header" id="flush-headingOne3">
               <button
-                class="accordion-button collapsed bg-info mx-auto rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
+                data-bs-target="#flush-collapseOne3"
                 aria-expanded="false"
-                aria-controls="flush-collapseOne"
+                aria-controls="flush-collapseOne3"
               >
-                Science-Fiction
+                The Silent Patient
               </button>
             </h2>
             <div
-              id="flush-collapseOne"
+              id="flush-collapseOne3"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample"
+              aria-labelledby="flush-headingOne3"
+              data-bs-parent="#accordionFlushExample3"
             >
-              <div class="accordion-body bg-light" id="later">
+              <div class="accordion-body bg-light rounded-bottom" id="later3">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 first item's accordion body.
@@ -1264,25 +1273,25 @@
           </div>
           <br />
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
+            <h2 class="accordion-header" id="flush-headingTwo3">
               <button
-                class="accordion-button collapsed mx-auto bg-info rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
+                data-bs-target="#flush-collapseTwo3"
                 aria-expanded="false"
-                aria-controls="flush-collapseTwo"
+                aria-controls="flush-collapseTwo3"
               >
-                Horror
+                The Da Vinci Code
               </button>
             </h2>
             <div
-              id="flush-collapseTwo"
+              id="flush-collapseTwo3"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample"
+              aria-labelledby="flush-headingTwo3"
+              data-bs-parent="#accordionFlushExample3"
             >
-              <div class="accordion-body bg-light">
+              <div class="accordion-body bg-light rounded-bottom">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 second item's accordion body. Let's imagine this being filled
@@ -1292,25 +1301,25 @@
           </div>
           <br />
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
+            <h2 class="accordion-header" id="flush-headingThree3">
               <button
-                class="accordion-button collapsed mx-auto bg-info rounded-3"
+                class="accordion-button collapsed mx-auto rounded-1 text-white"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
+                data-bs-target="#flush-collapseThree3"
                 aria-expanded="false"
-                aria-controls="flush-collapseThree"
+                aria-controls="flush-collapseThree3"
               >
-                Mystery
+                The Lost Symbol
               </button>
             </h2>
             <div
-              id="flush-collapseThree"
+              id="flush-collapseThree3"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample"
+              aria-labelledby="flush-headingThree3"
+              data-bs-parent="#accordionFlushExample3"
             >
-              <div class="accordion-body bg-light">
+              <div class="accordion-body bg-light rounded-bottom">
                 Placeholder content for this accordion, which is intended to
                 demonstrate the <code>.accordion-flush</code> class. This is the
                 third item's accordion body. Nothing more exciting happening
